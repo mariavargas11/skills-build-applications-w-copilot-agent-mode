@@ -1,0 +1,369 @@
+/* OctoFit Tracker App Styling */
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: var(--light-color);
+}
+
+/* Navigation Bar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  margin: 0 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--info-color) !important;
+  border-bottom: 2px solid var(--info-color);
+}
+
+/* Page Content */
+.page-container {
+  padding: 2rem 0;
+  min-height: calc(100vh - 60px);
+}
+
+/* Hero Section / Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--info-color) 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.jumbotron h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.jumbotron p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Tables */
+.table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table thead.table-dark {
+  background-color: var(--dark-color) !important;
+}
+
+.table thead th {
+  font-weight: 600;
+  border: none;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: 1px solid #e9ecef;
+  padding: 1rem;
+}
+
+/* Buttons */
+.btn {
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: #5c636a;
+  border-color: #5c636a;
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.btn-success:hover {
+  background-color: #157347;
+  border-color: #157347;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  padding: 0.625rem 0.875rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Badges */
+.badge {
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+/* Modals */
+.modal-content {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+/* Alerts */
+.alert {
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.alert-success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.alert-info {
+  background-color: #cfe2ff;
+  color: #084298;
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* Responsive Containers */
+.container-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Data Display Tables */
+.data-table-wrapper {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 1.5rem;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #6c757d;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid Layout */
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .component-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+
+  .page-container {
+    padding: 1rem 0;
+  }
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0b5ed7;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
